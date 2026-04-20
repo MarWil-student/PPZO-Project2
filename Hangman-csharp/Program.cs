@@ -42,6 +42,30 @@ namespace HangmanGame
             secretWord = wordBank.GetRandomWord();
             player = new Player();
         }
+
+        public void Start()
+        {
+            Console.WriteLine("====  Gra Wisielec  ====");
+            Console.WriteLine("Zasady: Zgadnij slowo, maksymalna ilosc pomylek to 6");
+
+        }
+
+        private void DisplayBoard()
+        {
+            Console.WriteLine("\nSlowo:");
+            foreach(char c in secretWord)
+            {
+                if(player.GuessedLetters.Contains(c))
+                {
+                    Console.WriteLine(c + " ");
+                }
+                else
+                {
+                    Console.WriteLine("_ ");
+                }
+            }
+            Console.WriteLine();
+        }
     }
     class Program
     {
