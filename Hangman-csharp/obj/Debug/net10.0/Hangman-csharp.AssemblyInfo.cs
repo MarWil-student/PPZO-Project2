@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hangman-csharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d563b34a661a742004c3f64f34a0d40d57bf6a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75eae71b52939821d084042b8079ac085aaf876b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hangman-csharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hangman-csharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
