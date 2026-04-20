@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Linq;
 
 namespace HangmanGame
 {
@@ -48,6 +49,36 @@ namespace HangmanGame
             Console.WriteLine("====  Gra Wisielec  ====");
             Console.WriteLine("Zasady: Zgadnij slowo, maksymalna ilosc pomylek to 6");
 
+            while(player.Mistakes < maxMistakes)
+            {
+                DisplayBoard();
+                char guess = GetValidInput();
+
+                if (player.AlreadyGuessed(guess))
+                {
+                    Console.WriteLine($"\n Litera '{guess}' byla juz wybrana");
+                    continue;
+                }
+
+                player.RegisterLetter(guess);
+
+                if (secretWord.Contains(guess))
+                {
+                    Console.WriteLine("\n Poprawna litera!");
+                }
+                else
+                {
+                    player.AddMistakes();
+                    Console.WriteLine("\n Pudlo!");
+                }
+
+                if(Win())
+                {
+                    DisplayBoard();
+                    Console.WriteLine("\n====  Gratulacje wygrana!  ====");
+                    return;
+                }
+            }
         }
 
         private void DisplayBoard()
@@ -100,9 +131,10 @@ namespace HangmanGame
     }
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            Console.WriteLine("Nic");
+            Game game = new Game();
+            game.Start();
         }
     }
 
