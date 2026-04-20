@@ -66,6 +66,37 @@ namespace HangmanGame
             }
             Console.WriteLine();
         }
+
+        private char GetValidInput()
+        {
+            while (true)
+            {
+                Console.WriteLine("\nPodaj jedna litere: ");
+                string input = Console.ReadLine()?.ToLower();
+
+                
+                if(string.IsNullOrWhiteSpace(input) || input.Length != 1)
+                {
+                    Console.WriteLine("BLAD: Musisz wpisac dokladnie jedna litere");
+                    continue;
+                }
+
+                char letter = input[0];
+
+                if(!char.IsLetter(letter))
+                {
+                    Console.WriteLine("BLAD: Znaki inne niz litery nie sa akceptowane");
+                    continue;
+                }
+
+                return letter;
+            }
+        }
+
+        private bool Win()
+        {
+            return secretWord.All(c=> player.GuessedLetters.Contains(c));
+        }
     }
     class Program
     {
