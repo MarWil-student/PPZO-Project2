@@ -72,11 +72,16 @@ namespace HangmanGame
                     Console.WriteLine("\n Pudlo!");
                 }
 
-                if(Win())
+                if(Win() == true)
                 {
                     DisplayBoard();
                     Console.WriteLine("\n====  Gratulacje wygrana!  ====");
                     return;
+                }
+                else
+                {
+                    Console.WriteLine("\n====  Przegrales  ====");
+                    Console.WriteLine($"\nSlowo to: {secretWord}");
                 }
             }
         }

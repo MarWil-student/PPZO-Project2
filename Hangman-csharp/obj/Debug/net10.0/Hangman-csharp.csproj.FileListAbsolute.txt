@@ -1,0 +1,15 @@
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\bin\Debug\net10.0\Hangman-csharp.exe
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\bin\Debug\net10.0\Hangman-csharp.deps.json
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\bin\Debug\net10.0\Hangman-csharp.runtimeconfig.json
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\bin\Debug\net10.0\Hangman-csharp.dll
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\bin\Debug\net10.0\Hangman-csharp.pdb
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\obj\Debug\net10.0\Hangman-csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\obj\Debug\net10.0\Hangman-csharp.AssemblyInfoInputs.cache
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\obj\Debug\net10.0\Hangman-csharp.AssemblyInfo.cs
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\obj\Debug\net10.0\Hangman-csharp.csproj.CoreCompileInputs.cache
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\obj\Debug\net10.0\Hangman-csharp.sourcelink.json
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\obj\Debug\net10.0\Hangman-csharp.dll
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\obj\Debug\net10.0\refint\Hangman-csharp.dll
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\obj\Debug\net10.0\Hangman-csharp.pdb
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\obj\Debug\net10.0\Hangman-csharp.genruntimeconfig.cache
+C:\Users\marty\OneDrive\Pulpit\PPZO\PPZO-Project2\Hangman-csharp\obj\Debug\net10.0\ref\Hangman-csharp.dll
