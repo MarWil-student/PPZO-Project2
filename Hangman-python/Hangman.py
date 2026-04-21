@@ -18,7 +18,7 @@ class Player:
     def already_guessed(self, letter):
         return letter in self.guessed_letters
     def register_letter(self, letter):
-        selg.guessed_letters.add(letter)
+        self.guessed_letters.add(letter)
 
 class Game:
     def __init__(self):
@@ -39,13 +39,13 @@ class Game:
             if guess in self.__secret_word:
                 print("\n Poprawna litera!")
             else:
-                self.__player.ad_mistake()
+                self.__player.add_mistakes()
                 print(f"\n Pudlo! Pozostalo bledow: {self.__max_mistakes - self.__player.mistakes}")
             if self.__win():
                 self.__display_board()
                 print("\n====  Gratulacje wygrana!  ====")
                 return
-         print(f"\nPrzegrana! Wisielec gotowy. Slowo to: {self.__secret_word}")
+        print(f"\nPrzegrana! Wisielec gotowy. Slowo to: {self.__secret_word}")
     def __display_board(self):
         print("\nSlowo:")
         display = [c if self.__player.already_guessed(c) else "_" for c in self.__secret_word]
@@ -53,7 +53,7 @@ class Game:
     def __get_valid_input(self):
         while True:
             user_input = input("\nPodaj jedna litere: ").strip().lower()
-            if not user_input or len(user_input != 1:
+            if not user_input or len(user_input) != 1:
                 print("BLAD: Musisz wpisac dokladnie jedna litere")
                 continue
             if not user_input.isalpha():
